@@ -15,7 +15,7 @@ const dev = process.env.NODE_ENV !== "production";
   const server = express();
 
   createNextI18nMiddleware(nextI18n, app, server, {
-    hostByLocale: {
+    hostByLanguage: {
       en: env.HOST_EN,
       ru: env.HOST_RU,
     },
