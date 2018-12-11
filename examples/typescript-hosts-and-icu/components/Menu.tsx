@@ -1,26 +1,18 @@
 import { nextI18n, Link, withNamespaces } from "../i18n";
 
-const handleToggleLanguageClick = () =>
-  nextI18n.changeLanguage(nextI18n.getLanguage() === "en" ? "ru" : "en");
-
 export default withNamespaces(["common"])(({ t }) => (
   <>
     <ul>
       <li>
-        <Link href="/">{t("menu.index")}</Link>
+        <Link href="/"><a>{t("menu.index")}</a></Link>
       </li>
       <li>
-        <Link href="/about">{t("menu.about")}</Link>
+        <Link href="/about"><a>{t("menu.about")}</a></Link>
       </li>
       <li>
-        <a
-          style={{ borderBottom: "1px dotted" }}
-          onClick={handleToggleLanguageClick}
-        >
-          {t("menu:toggleLanguage")}
-        </a>
+        <Link language={nextI18n.getLanguage() === "en" ? "ru" : "en"}><a>{t("menu.toggleLanguage")}</a></Link>
       </li>
-      <hr />
     </ul>
+      <hr />
   </>
 ));
