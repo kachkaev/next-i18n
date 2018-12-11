@@ -1,5 +1,6 @@
 const express = require("express");
 const next = require("next");
+const { resolve } = require("path");
 const { createNextI18nMiddleware } = require("@next-i18n/server-express");
 const { nextI18n } = require("./i18n");
 
@@ -14,12 +15,12 @@ const dev = process.env.NODE_ENV !== "production";
   const server = express();
 
   createNextI18nMiddleware(nextI18n, app, server, {
-    // By default, it is assumed that the locales are in static/locales
-    pathToLocales: resolve(__dirname, "../locales"),
+    // By default, it is assumed that the translation strings are in static/translations
+    pathToTranslations: resolve(__dirname, "../translations"),
 
-    // By default, the list of languages is determined automatically
+    // By default, the list of available languages is determined automatically from translation files
     // In any case, it is passed to the client via __NEXT_DATA__
-    supportedLanguages: ["en", "ru"],
+    availableLanguages: ["en", "ru"],
   });
 
   server.get("*", (req, res) => handle(req, res));
