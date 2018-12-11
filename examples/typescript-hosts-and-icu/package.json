@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "ts-node server.ts"
+  },
+  "dependencies": {
+    "@next-i18n/based-on-host": "^0.0.0",
+    "@next-i18n/server-express": "^0.0.0",
+    "envalid": "^4.1.4",
+    "express": "^4.16.4",
+    "i18next-icu": "^1.0.1",
+    "next": "^7.0.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.12",
+    "@zeit/next-typescript": "^1.1.1",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.2.2"
+  }
+}
