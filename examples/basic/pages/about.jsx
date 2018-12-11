@@ -5,6 +5,10 @@ export default withNamespaces(["about"])(({ t }) => (
   <>
     <Menu />
     <h1>{t("pageHeader")}</h1>
-    <Trans i18nKey="message" />
+    <p>
+      <Trans i18nKey="message">
+        <em>0</em>
+      </Trans>
+    </p>
   </>
 ));
