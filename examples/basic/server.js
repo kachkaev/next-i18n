@@ -15,7 +15,7 @@ const dev = process.env.NODE_ENV !== "production";
 
   createNextI18nMiddleware(nextI18n, app, server, {
     // By default, it is assumed that the locales are in static/locales
-    pathToLocales: resolve(__dirname, '../locales'),
+    pathToLocales: resolve(__dirname, "../locales"),
 
     // By default The list of languages is determined automatically
     // In any case, it is passed to the client via __NEXT_DATA__
