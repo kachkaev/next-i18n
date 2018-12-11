@@ -1,26 +1,12 @@
 {
-  "name": "next-i18n",
-  "version": "0.0.1",
+  "private": true,
   "description": "A simple yet powerful way of making your Next.js app multilingual (powered by i18next)",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kachkaev/next-i18n.git"
-  },
-  "keywords": [
-    "i18next",
-    "i18n",
-    "next.js",
-    "typescript",
-    "react-i18next"
-  ],
   "author": "Alexander Kachkaev <alexander@kachkaev.ru>",
   "license": "BSD-3-Clause",
-  "bugs": {
-    "url": "https://github.com/kachkaev/next-i18n/issues"
+  "scripts": {
+    "format": "prettier --write --ignore-path .gitignore \"{.,examples/**,src/**}/{*.ts{x,},*.md,*.json,*.js}\""
   },
-  "homepage": "https://github.com/kachkaev/next-i18n#readme"
+  "devDependencies": {
+    "prettier": "^1.15.3"
+  }
 }
