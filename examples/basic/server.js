@@ -17,9 +17,9 @@ const dev = process.env.NODE_ENV !== "production";
     // By default, it is assumed that the locales are in static/locales
     pathToLocales: resolve(__dirname, "../locales"),
 
-    // By default The list of languages is determined automatically
+    // By default, the list of languages is determined automatically
     // In any case, it is passed to the client via __NEXT_DATA__
-    languages: ["en", "ru"],
+    supportedLanguages: ["en", "ru"],
   });
 
   server.get("*", (req, res) => handle(req, res));
