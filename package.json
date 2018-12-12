@@ -4,7 +4,7 @@
   "author": "Alexander Kachkaev <alexander@kachkaev.ru>",
   "license": "BSD-3-Clause",
   "scripts": {
-    "format": "prettier --write --ignore-path .gitignore \"{.,examples/**,src/**}/{*.ts{x,},*.md,*.json,*.js}\""
+    "format": "prettier --write --ignore-path .gitignore \"{.,examples/**,src/**}/*.{js,jsx,md,ts,tsx}\""
   },
   "devDependencies": {
     "prettier": "^1.15.3"
